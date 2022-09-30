@@ -37,7 +37,7 @@ let x = 0,
 // event listener when someone want to roll dice
 document.querySelector(".roll").addEventListener("click", function () {
   //computing dice digit
-  x = Math.round(Math.random() * 6) + 1;
+  x = Math.floor(Math.random() * 6) + 1;
 
   // case if we get 1 on dice roll
   if (x === 1) {
